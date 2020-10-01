@@ -7,7 +7,7 @@ Recreate the HTML and CSS for the Github tab page (https://github.com/overthemik
 - Your profile: `https://api.github.com/users/<username>`
 - Your repos: `https://api.github.com/users/<username>/repos`
 
-After loading data from the Github API in express and returning it to your React application, write at least the following information to the Component:
+After loading data from the Github API and returning it to your React application, write at least the following information to the Component:
 
 - name
 - blog
