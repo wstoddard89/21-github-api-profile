@@ -46,38 +46,138 @@ body {
 .navbar {
   height: 50px;
   padding-top: 20px;
-  position: absolute;
   padding-left: 450px;
   padding-bottom: 10px;
-  top: 20px;
-  min-width: 100%;
+  width: 100%;
   border-bottom: solid 1px#E2E4E8;
+  position: fixed;
+  z-index: 1;
+  background: white;
 }
 
 .navbar a {
-  padding-right: 60px;
+  margin-right: 60px;
   text-decoration: none;
   color: black;
+  padding-bottom: 9px;
+}
+
+.navbar a:hover {
+  border-bottom: solid 3px #DBDDDF;
+}
+
+.repoTotal {
+  background: #E8EAEC;
+  border-radius: 8px;
+  font-size: 12px;
 }
 
 .avatar img {
   border-radius: 50%;
   max-width: 87%;
   margin-bottom: 20px;
+  z-index: 2;
 }
 
 .repoContainer {
   width: 60%;
   position: absolute;
   right: 110px;
-  top: 90px;
+  top: 65px;
   border-bottom: solid 1px #E2E4E8;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.repoInput {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.repoInput input {
+  width: 540px;
+  height: 30px;
+  padding-left: 10px;
+}
+
+.typeBtn {
+  height: 30px;
+  width: 90px;
+  border-radius: 5px;
+  border: solid 1px #D9DBDB;
+  outline: none;
+  cursor: pointer;
+  background: #FAFBFC;
+  font-weight: bold;
+  color: #8A8D90;
+}
+
+.languageBtn {
+  height: 30px;
+  width: 140px;
+  border-radius: 5px;
+  border: solid 1px #D9DBDB;
+  outline: none;
+  cursor: pointer;
+  background: #FAFBFC;
+  font-weight: bold;
+  color: #8A8D90;
+}
+
+.newBtn {
+  height: 30px;
+  width: 70px;
+  border-radius: 5px;
+  border: solid 1px #D9DBDB;
+  outline: none;
+  cursor: pointer;
+  background: #54A158;
+  color: white;
+  font-weight: bold;
 }
 
 .eachRepo {
   height: 140px;
   width: 100%;
   border-top: solid 1px #E2E4E8;
-  
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  padding-top: 30px;
+}
+
+.eachRepo a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2566CF;
+  text-decoration: none;
+}
+
+.starBtn {
+  width: 60px;
+  height: 25px;
+  border-radius: 5px;
+  border: solid 1px #D9DBDB;
+  outline: none;
+  cursor: pointer;
+  background: #FAFBFC;
+  position: absolute;
+  right: 0px;
+}
+
+.eachRepo a:hover {
+  text-decoration: underline;
+}
+
+.bottomRepo {
+  padding-top: 20px;
+}
+
+.bottomRepo span {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.forkedFrom {
+  margin-top: 5px;
 }
