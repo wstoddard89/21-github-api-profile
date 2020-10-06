@@ -33,6 +33,7 @@ export default () => {
         {profileData.blog}
         <div className="profileLocation"><i class="far fa-map-marker-alt"></i> {profileData.location}</div>
         <div className="profileEmail"><i class="far fa-envelope"></i> {profileData.email || "Email: N/A"}</div>
+        <div className="profileHtml">{profileData.html_url}</div>
       </div>
       <div className="repoContainer">
         <div className="repoInput">
@@ -43,7 +44,7 @@ export default () => {
         </div>
         {repoData.map((item) => (
           <div className="eachRepo">
-            <a href="#">{item.name} </a>
+            <a href={item.html_url}>{item.name} </a>
             <button className="starBtn"><i class="far fa-star"></i>Star</button>
         <div className="forkedFrom">Forked from: {item.forks_url}</div>
             {/* {item.updated_at} */}

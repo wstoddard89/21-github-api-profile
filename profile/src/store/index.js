@@ -16,14 +16,6 @@ function profile(state = initialState, action) {
     default:
       return state
   }
-  // function repos(state = initialState, action) {
-  //   switch (action.type) {
-  //     case 'GET_REPOS':
-  //       return { ...state, repos: action.payload }
-  //     default:
-  //       return state
-  //   }
-  // }
 }
 
 export function getProfile() {
@@ -42,17 +34,6 @@ export function getProfile() {
     })
   }
 }
-
-// export function getRepos() {
-//   return (dispatch) => {
-//     axios.get('https://api.github.com/users/wstoddard89/repos').then((resp) => {
-//       dispatch({
-//         type: 'GET_REPOS',
-//         payload: resp.data,
-//       })
-//     })
-//   }
-// }
 
 export default createStore(
   profile,
