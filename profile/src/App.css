@@ -3,3 +3,81 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  
+}
+
+.sideBar {
+  width: 30%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 110px;
+  position: absolute;
+  top: 40px;
+}
+
+.profileName {
+  font-size: 28px;
+}
+
+.editProfile {
+  width: 85%;
+  height: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #FAFBFC;
+  border: solid 1px #D9DBDB;
+  border-radius: 5px;
+}
+
+.log-in {
+  color: #838383;
+  font-size: 20px;
+}
+
+.navbar {
+  height: 50px;
+  padding-top: 20px;
+  position: absolute;
+  padding-left: 450px;
+  padding-bottom: 10px;
+  top: 20px;
+  min-width: 100%;
+  border-bottom: solid 1px#E2E4E8;
+}
+
+.navbar a {
+  padding-right: 60px;
+  text-decoration: none;
+  color: black;
+}
+
+.avatar img {
+  border-radius: 50%;
+  max-width: 87%;
+  margin-bottom: 20px;
+}
+
+.repoContainer {
+  width: 60%;
+  position: absolute;
+  right: 110px;
+  top: 90px;
+  border-bottom: solid 1px #E2E4E8;
+  margin-bottom: 10px;
+}
+
+.eachRepo {
+  height: 140px;
+  width: 100%;
+  border-top: solid 1px #E2E4E8;
+  
+}
